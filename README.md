@@ -41,13 +41,13 @@ Assurez-vous d'avoir les éléments suivants installés sur votre machine :
 3. Construisez l'image Docker de l'application :
 
     ```bash
-    docker build -t ELK-SpringBoot-CRUD .
+    docker build -t elk-springboot-crud .
     ```
 
 4. Exécutez l'application avec Docker :
 
     ```bash
-    docker run -p 8080:8080 --link elasticsearch -e "SPRING_PROFILES_ACTIVE=production" ELK-SpringBoot-CRUD
+    docker run -p 8080:8080 --link elasticsearch -e "SPRING_PROFILES_ACTIVE=production" elk-springboot-crud
     ```
 
 ## Accès à l'application
